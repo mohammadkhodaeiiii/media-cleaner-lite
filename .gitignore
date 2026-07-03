@@ -1,0 +1,28 @@
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Archives
+*.zip
+
+# Node
+node_modules/
+
+# Composer
+vendor/bin/
+vendor/composer/
+
+# Environment
+.env
+.env.*
+
+# Build
+dist/
+build/
