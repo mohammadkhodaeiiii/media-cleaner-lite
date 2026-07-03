@@ -1,0 +1,47 @@
+# Copyright (C) 2026 Mohammad Khodaei
+# This file is distributed under the same license as the Media Cleaner Lite plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Media Cleaner Lite 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mohammadkhodaei/media-cleaner-lite\n"
+"POT-Creation-Date: 2026-06-28 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Cursor\n"
+
+#: media-cleaner-lite.php
+msgid "Media Cleaner Lite"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Scanner"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Unused Media"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Reports"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-ajax.php
+msgid "Starting scan…"
+msgstr ""
+
+#: includes/class-ajax.php
+msgid "Scan complete."
+msgstr ""

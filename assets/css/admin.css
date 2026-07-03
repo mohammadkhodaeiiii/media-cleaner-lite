@@ -1,0 +1,272 @@
+/**
+ * Media Cleaner Lite - admin styles.
+ *
+ * RTL aware via logical properties. Honors prefers-reduced-motion.
+ */
+
+.mcl-wrap {
+	max-width: 1100px;
+}
+
+.mcl-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mcl-title .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.mcl-subtitle {
+	color: #50575e;
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.mcl-inline-notice {
+	margin: 12px 0;
+}
+
+.mcl-section-title {
+	margin-top: 28px;
+}
+
+.mcl-section {
+	margin-top: 20px;
+}
+
+.mcl-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.mcl-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.mcl-cards .mcl-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+	border-inline-start: 4px solid #c3c4c7;
+}
+
+.mcl-cards .mcl-card .dashicons {
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+	color: #646970;
+}
+
+.mcl-card-value {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.mcl-card-label {
+	color: #50575e;
+	font-size: 13px;
+}
+
+.mcl-card--good { border-inline-start-color: #00a32a; }
+.mcl-card--good .dashicons { color: #00a32a; }
+.mcl-card--bad { border-inline-start-color: #d63638; }
+.mcl-card--bad .dashicons { color: #d63638; }
+.mcl-card--warn { border-inline-start-color: #dba617; }
+.mcl-card--warn .dashicons { color: #dba617; }
+.mcl-card--info { border-inline-start-color: #7c3aed; }
+.mcl-card--info .dashicons { color: #7c3aed; }
+
+.mcl-empty-state {
+	text-align: center;
+	margin-top: 24px;
+	padding: 48px 24px;
+}
+
+.mcl-empty-state .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #2271b1;
+}
+
+.mcl-empty-state h2 {
+	margin: 12px 0 4px;
+}
+
+.mcl-score-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 28px;
+	margin-top: 20px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	padding: 24px;
+}
+
+.mcl-score {
+	--mcl-score: 0;
+	position: relative;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background:
+		radial-gradient(closest-side, #fff 78%, transparent 79% 100%),
+		conic-gradient(#00a32a calc(var(--mcl-score) * 1%), #e0e0e0 0);
+	flex-shrink: 0;
+}
+
+.mcl-score-value {
+	font-size: 30px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.mcl-score-label {
+	font-size: 12px;
+	color: #50575e;
+}
+
+.mcl-score-meta p {
+	margin: 4px 0;
+}
+
+.mcl-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.mcl-scanner {
+	margin-top: 20px;
+}
+
+.mcl-scanner-controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.mcl-scanner-controls .button .dashicons {
+	vertical-align: middle;
+	margin-inline-end: 2px;
+}
+
+.mcl-progress-wrap {
+	margin-top: 8px;
+}
+
+.mcl-progress {
+	width: 100%;
+	height: 18px;
+	background: #e0e0e0;
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.mcl-progress-fill {
+	display: block;
+	height: 100%;
+	width: 0;
+	background: linear-gradient(90deg, #00a32a, #2271b1);
+	transition: width 240ms ease;
+}
+
+.mcl-progress-meta {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8px;
+	font-size: 13px;
+	color: #50575e;
+}
+
+.mcl-status {
+	font-weight: 600;
+}
+
+.mcl-report-table .mcl-num,
+.mcl-unused-table .mcl-num {
+	text-align: end;
+}
+
+.mcl-settings hr {
+	margin: 28px 0 16px;
+}
+
+.mcl-checkbox-row {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin: 2px 12px 2px 0;
+}
+
+.mcl-unit {
+	color: #646970;
+	margin-inline-start: 4px;
+}
+
+.mcl-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 16px 0;
+}
+
+.mcl-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.mcl-badge--high {
+	background: #d1fae5;
+	color: #065f46;
+}
+
+.mcl-badge--medium {
+	background: #fef3c7;
+	color: #92400e;
+}
+
+.mcl-badge--warn {
+	background: #fee2e2;
+	color: #991b1b;
+}
+
+.mcl-actions-cell {
+	white-space: nowrap;
+}
+
+.mcl-scan-info {
+	margin-top: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mcl-progress-fill {
+		transition: none;
+	}
+}
